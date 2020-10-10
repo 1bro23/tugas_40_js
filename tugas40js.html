@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+        <meta charset="utf-8" />
+        <title>Belajar Javascript - NIOMIC</title>
+ </head>
+ <body>
+        <button type="button" onclick="jalan()" name="button">Jalankan</button>
+        <br />
+        <br />
+        <hr />
+        <b>Base URI</b> Property : <br />
+        <p id="uri">contoh</p>
+        <hr />
+        <b>Body</b> Property : <br />
+        <p id="style">contoh</p>
+        <hr />
+        <b>Create</b> Element : <br /><br />
+
+        <script type="text/javascript">
+          function jalan()
+          {
+            let a=document.baseURI;
+            document.getElementById("uri").innerHTML=a;
+            document.getElementById("style").innerHTML="color = green";
+            document.body.style.backgroundColor="green";
+            let box=document.createElement("input");
+            document.body.appendChild(box);
+          }
+        </script>
+ </body>
+</html>
